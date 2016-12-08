@@ -1,9 +1,7 @@
 @charset 'utf-8';
-
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
-
 @include foundation-global-styles;
 @include foundation-grid;
 // @include foundation-flex-grid;
@@ -45,6 +43,79 @@
 @include foundation-visibility-classes;
 @include foundation-float-classes;
 // @include foundation-flex-classes;
-
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+/************************
+
+http://zurb.com/building-blocks/off-canvas-sidebar-component
+
+*************************/
+
+.left-off-canvas-menu {
+    -ms-transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    position: fixed;
+    width: 0;
+    height: 100%;
+    box-shadow: $box-shadow;
+    .icon-bar {
+        text-align: center;
+        a {
+            margin: 2rem auto;
+        }
+    }
+}
+
+.move-right .left-off-canvas-menu {
+    width: $sidebar-width;
+    background: $medium-gray;
+}
+
+.move-right .exit-off-canvas {
+    display: none;
+}
+
+.left-off-canvas-toggle {
+    display: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 3rem;
+    color: $light-gray;
+    transition: all .25s ease-in-out;
+    &:focus {
+        color: $light-gray;
+    }
+    &:hover {
+        color: lighten($light-gray, 35%);
+        transition: all .25s ease-in-out;
+    }
+}
+
+.vert-menu-item {
+    padding: 1rem;
+    background: $dark-gray;
+    &:hover {
+        background: lighten($dark-gray, 35%);
+        /* Safari */
+        -webkit-transition: background .2s ease-in;
+        transition: background .2s ease-in;
+    }
+}
+
+
+/************************
+
+Font Awesome SCSS
+
+************************/
+
+.fa {
+    font-size: $menu-icon-size;
+    text-align: center;
+    color: $white;
+}
