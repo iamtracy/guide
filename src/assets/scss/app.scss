@@ -123,3 +123,14 @@ Font Awesome SCSS
     text-align: center;
     color: $white;
 }
+
+
+/************************
+
+Typography
+
+************************/
+
+h3 {
+    color: map-get($foundation-palette, primary);
+}
