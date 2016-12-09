@@ -78,6 +78,17 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 
 .title-bar {
     z-index: 100;
+    padding: 0;
+}
+
+ul.menu {
+    li {
+        padding: .45rem;
+    }
+    li:hover {
+        background: rgba($white, 0.25);
+        transition: background .2s ease-in;
+    }
 }
 
 .move-right .left-off-canvas-menu {
@@ -157,4 +168,13 @@ ol {
 
 h4 {
     color: map-get($foundation-palette, primary);
+}
+
+a {
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+        color: $light-gray;
+    }
 }
