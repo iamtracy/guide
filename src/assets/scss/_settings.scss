@@ -45,7 +45,7 @@
 $global-font-size: 90%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: ( primary: #0e9948, secondary: #777, success: #3adb76, warning: #ffae00, alert: #ec5840, );
+$foundation-palette: ( primary: #0e9948, secondary: #ccc, success: #3adb76, warning: #ffae00, alert: #ec5840, );
 $light-gray: #ccc;
 $medium-gray: #444;
 $dark-gray: #444;
@@ -204,8 +204,9 @@ $buttongroup-expand-max: 6;
 // -----------
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
-$callout-margin: 0 0 1rem 0;
+$callout-border: 0;
+$callout-margin: 0 0 1rem 250px;
+;
 $callout-padding: 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
