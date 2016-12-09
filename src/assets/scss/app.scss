@@ -82,7 +82,7 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 
 .move-right .left-off-canvas-menu {
     width: $sidebar-width;
-    background: $medium-gray;
+    background: $dark-gray;
 }
 
 .move-right .exit-off-canvas {
@@ -108,7 +108,7 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 .vert-menu-item {
     padding: 1rem;
     background: $dark-gray;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $medium-gray;
     &:hover {
         background: lighten($dark-gray, 35%);
         /* Safari */
@@ -128,6 +128,7 @@ Font Awesome SCSS
     font-size: $menu-icon-size;
     text-align: center;
     color: $white;
+    margin: .35rem 0;
 }
 
 
@@ -148,6 +149,10 @@ Typography
 
 .row {
     margin-bottom: 2.35rem;
+}
+
+ol {
+    margin-left: 2.25rem;
 }
 
 h4 {
