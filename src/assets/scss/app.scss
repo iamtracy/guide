@@ -52,8 +52,14 @@ http://zurb.com/building-blocks/off-canvas-sidebar-component
 
 *************************/
 
+$desktop-cont-margin: 250px;
+//Right Container
+.right-container {
+    margin-left: $desktop-cont-margin;
+}
+
 //Fixed sidebar
-$sidebar-width: 250px;
+$sidebar-width: $desktop-cont-margin;
 $menu-icon-size: 2rem;
 $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 .left-off-canvas-menu {
@@ -128,6 +134,10 @@ ul.menu {
     }
 }
 
+article {
+    margin-bottom: 3rem;
+}
+
 
 /************************
 
@@ -153,13 +163,11 @@ Typography
     h3.title {
         margin-top: .6rem;
     }
-    .row {
-        margin-left: 2.79rem;
-    }
 }
 
 .row {
-    margin-bottom: 2.35rem;
+    margin-left: 1.9rem;
+    max-width: 1400px;
 }
 
 ol {
@@ -168,6 +176,7 @@ ol {
 
 h4 {
     color: map-get($foundation-palette, primary);
+    margin-bottom: .65rem;
 }
 
 a {
