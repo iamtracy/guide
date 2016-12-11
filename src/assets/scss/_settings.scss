@@ -45,7 +45,7 @@
 $global-font-size: 90%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: ( primary: #0e9948, secondary: #ccc, success: #3adb76, warning: #ffae00, alert: #ec5840, );
+$foundation-palette: ( primary: #0e9948, secondary: #ccc, success: #3adb76, warning: #ffae00, alert: #ec5840);
 $light-gray: #ccc;
 $medium-gray: #555;
 $dark-gray: #444;
@@ -207,7 +207,7 @@ $callout-background-fade: 85%;
 $callout-border: 0;
 $callout-margin: 0 0 1rem 0;
 ;
-$callout-padding: 1rem;
+$callout-padding: 2.5rem 0 2.5rem 1rem;
 $callout-font-color: $body-font-color;
 $callout-font-color-alt: $body-background;
 $callout-radius: $global-radius;
@@ -302,7 +302,7 @@ $menu-margin: 0;
 $menu-margin-nested: 1rem;
 $menu-item-padding: 0.7rem 1rem;
 $menu-item-color-active: $white;
-$menu-item-background-active: map-get($foundation-palette, primary);
+$menu-item-background-active: none;
 $menu-icon-spacing: 0.25rem;
 // 23. Meter
 // ---------

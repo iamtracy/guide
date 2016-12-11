@@ -24,7 +24,6 @@ function sideNav() {
         $('.left-off-canvas-toggle').hide();
     }
 }
-
 $(window).resize(function() {
     sideNav();
 });

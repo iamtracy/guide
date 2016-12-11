@@ -89,7 +89,12 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 
 ul.menu {
     li {
-        padding: .45rem;
+        padding-top: .45rem;
+        padding-bottom: .2rem;
+        border-bottom: 4px solid transparent;
+        &.active {
+            border-bottom: 4px solid map-get($foundation-palette, primary);
+        }
     }
     li:hover {
         background: rgba($white, 0.25);
@@ -122,16 +127,26 @@ ul.menu {
     }
 }
 
+.active .vert-menu-item {
+    border-left: 4px solid $light-gray;
+    transition: border-left .6s ease-in-out;
+}
+
 .vert-menu-item {
     padding: 1rem;
     background: $dark-gray;
     border-bottom: 1px solid $medium-gray;
+    border-left: 4px solid transparent;
     &:hover {
         background: lighten($dark-gray, 35%);
         /* Safari */
         -webkit-transition: background .2s ease-in;
-        transition: background .2s ease-in;
+        transition: background .3s ease-in;
     }
+}
+
+.sticky.is-stuck {
+    z-index: 300;
 }
 
 section {
@@ -168,13 +183,17 @@ Typography
 .callout {
     margin: 0;
     h3.title {
-        margin-top: .6rem;
+        margin-top: 0;
+        margin-bottom: .55rem;
+    }
+    p {
+        margin-bottom: 0;
     }
 }
 
 .row {
-    margin-left: 1.9rem;
-    max-width: 1400px;
+    max-width: 1250px;
+    margin: 0 auto;
 }
 
 ol {
@@ -184,7 +203,7 @@ ol {
 h4 {
     color: map-get($foundation-palette, primary);
     margin-top: 0;
-    margin-bottom: .65rem;
+    margin-bottom: 0.8rem;
 }
 
 a {

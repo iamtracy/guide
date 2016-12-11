@@ -5,8 +5,9 @@
                 <li class="left" style="width: 250px;">
                     <a href="#"><img src="https://presentations.inxpo.com/SharedContent/HTML/file-size-guide/xpocast/assets/images/inxpo-logo.png" alt=""></a>
                 </li>
-                <li><a href="#">XPOCAST<sup>&reg;</sup> Speaker Guide</a></li>
+                <li class="active"><a href="#">XPOCAST<sup>&reg;</sup> Speaker Guide</a></li>
                 <li><a href="#">XPOCAST<sup>&reg;</sup> File Size Guide</a></li>
+                <li><a href="#">Widget Guide</a></li>
             </ul>
         </div>
     </div>
@@ -17,37 +18,38 @@
         <!-- Off Canvas Menu -->
         <aside class="left-off-canvas-menu">
             <div class="icon-bar vertical five-up">
-                <a class="item" href="#overview">
-                    <div class="vert-menu-item">
-                        <i class="fa fa-compass" aria-hidden="true"></i>
-                        <label>Overview</label>
-                    </div>
-                </a>
-                <a class="item" href="#technicalrequirements">
-                    <div class="vert-menu-item">
-                        <i class="fa fa-list-ol" aria-hidden="true"></i>
-                        <label>Technical Requirements</label>
-                    </div>
-                </a>
-                <a class="item" href="#engagingcontent">
-                    <div class="vert-menu-item">
-                        <i class="fa fa-comments-o" aria-hidden="true"></i>
-                        <label>Engaging Content</label>
-                    </div>
-                </a>
-                <a class="item" href="#engagingpresenter">
-                    <div class="vert-menu-item" style="border: 0">
-                        <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                        <label>Engaging Presenter</label>
-                    </div>
-                </a>
-
+                <nav data-magellan data-bar-offset="40">
+                    <a class="item" href="#overview">
+                        <div class="vert-menu-item">
+                            <i class="fa fa-compass" aria-hidden="true"></i>
+                            <label>Overview</label>
+                        </div>
+                    </a>
+                    <a class="item" href="#technicalrequirements">
+                        <div class="vert-menu-item">
+                            <i class="fa fa-list-ol" aria-hidden="true"></i>
+                            <label>Technical Requirements</label>
+                        </div>
+                    </a>
+                    <a class="item" href="#engagingcontent">
+                        <div class="vert-menu-item">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            <label>Engaging Content</label>
+                        </div>
+                    </a>
+                    <a class="item" href="#engagingpresenter">
+                        <div class="vert-menu-item" style="border-bottom: 0">
+                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                            <label>Engaging Presenter</label>
+                        </div>
+                    </a>
+                </nav>
             </div>
         </aside>
     </div>
 </div>
 <div class="right-container">
-    <div class="callout secondary" id="overview">
+    <div class="callout secondary" id="overview" data-magellan-target="overview">
         <div class="row">
             <h3 class="title">Overview</h3>
             <p>XPOCAST is INXPO’s webcasting software that allows clients to deliver live, simulive or on demand webcasts using telephony, webcam/microphone or live video streaming. Each session uses one of the delivery options and one of the format options
@@ -94,7 +96,7 @@
             </section>
         </div>
     </div>
-    <div class="callout secondary" id="technicalrequirements">
+    <div class="callout secondary" id="technicalrequirements" data-magellan-target="technicalrequirements">
         <div class="row">
             <h3 class="title">Technical Requirements, System Checks and Network Preparation</h3>
             <p>A strong internet connection and a computer that meets the required specifications for delivery will be important to ensuring a successful webcast.</p>
@@ -150,7 +152,7 @@
             </section>
         </div>
     </div>
-    <div class="callout secondary" id="engagingcontent">
+    <div class="callout secondary" id="engagingcontent" data-magellan-target="engagingcontent">
         <div class="row">
             <h3 class="title">How to Create Engaging Online Content in XPOCAST</h3>
             <p>When delivering content online, it’s important to not only understand the options available but also how to utilize and deliver them in a way that engages the audience. Speakers must create moments for interaction and feedback from the audience.
@@ -231,7 +233,7 @@
             </section>
         </div>
     </div>
-    <div class="callout secondary" id="engagingpresenter">
+    <div class="callout secondary" id="engagingpresenter" data-magellan-target="engagingpresenter">
         <div class="row">
             <h3 class="title">Being an Engaging Online Presenter</h3>
             <p>Being a dynamic online presenter takes practice. Connecting with a remote audience is challenging; the speaker must understand the technology, have solid network/computer setup and remain upbeat throughout the session.</p>
