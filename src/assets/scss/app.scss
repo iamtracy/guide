@@ -129,7 +129,7 @@ ul.menu {
 
 .active .vert-menu-item {
     border-left: 4px solid $light-gray;
-    transition: border-left .6s ease-in-out;
+    transition: border-left .75s ease-in-out;
 }
 
 .vert-menu-item {
@@ -212,5 +212,15 @@ a {
     &:focus,
     &:visited {
         color: $light-gray;
+    }
+}
+
+footer {
+    padding: 3rem 0;
+    border-top: 1px solid $light-gray;
+    li {
+        display: inline;
+        text-decoration: none;
+        margin-right: 1rem;
     }
 }

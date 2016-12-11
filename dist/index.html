@@ -15,7 +15,7 @@
 
 <body>
 
-     <div data-sticky-container>
+    <div data-sticky-container>
     <div class="title-bar" data-sticky data-options="marginTop:0;" style="width:100%">
         <div class="title-bar-left horizontal-menu">
             <ul class="menu">
@@ -25,47 +25,53 @@
                 <li class="active"><a href="#">XPOCAST<sup>&reg;</sup> Speaker Guide</a></li>
                 <li><a href="#">XPOCAST<sup>&reg;</sup> File Size Guide</a></li>
                 <li><a href="#">Widget Guide</a></li>
+                <li><a href="#"></a></li>
             </ul>
         </div>
     </div>
 </div>
-<div class="off-canvas-wrap move-right" data-offcanvas>
-    <div class="inner-wrap">
-        <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
-        <!-- Off Canvas Menu -->
-        <aside class="left-off-canvas-menu">
-            <div class="icon-bar vertical five-up">
-                <nav data-magellan data-bar-offset="40">
-                    <a class="item" href="#overview">
-                        <div class="vert-menu-item">
-                            <i class="fa fa-compass" aria-hidden="true"></i>
-                            <label>Overview</label>
-                        </div>
-                    </a>
-                    <a class="item" href="#technicalrequirements">
-                        <div class="vert-menu-item">
-                            <i class="fa fa-list-ol" aria-hidden="true"></i>
-                            <label>Technical Requirements</label>
-                        </div>
-                    </a>
-                    <a class="item" href="#engagingcontent">
-                        <div class="vert-menu-item">
-                            <i class="fa fa-comments-o" aria-hidden="true"></i>
-                            <label>Engaging Content</label>
-                        </div>
-                    </a>
-                    <a class="item" href="#engagingpresenter">
-                        <div class="vert-menu-item" style="border-bottom: 0">
-                            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                            <label>Engaging Presenter</label>
-                        </div>
-                    </a>
-                </nav>
-            </div>
-        </aside>
+ <body>
+    <div class="off-canvas-wrapper move-right" data-off-canvas-wrapper>
+
+
+
+        <div class="inner-wrap">
+            <a class="left-off-canvas-toggle" href="#"><i class="fi-list"></i></a>
+            <!-- Off Canvas Menu -->
+            <aside class="left-off-canvas-menu">
+                <div class="icon-bar vertical five-up">
+                    <nav data-magellan data-animation-easing="">
+                        <a class="item" href="#overview">
+                            <div class="vert-menu-item">
+                                <i class="fa fa-compass" aria-hidden="true"></i>
+                                <label>Overview</label>
+                            </div>
+                        </a>
+                        <a class="item" href="#technicalrequirements">
+                            <div class="vert-menu-item">
+                                <i class="fa fa-list-ol" aria-hidden="true"></i>
+                                <label>Technical Requirements</label>
+                            </div>
+                        </a>
+                        <a class="item" href="#engagingcontent">
+                            <div class="vert-menu-item">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                <label>Engaging Content</label>
+                            </div>
+                        </a>
+                        <a class="item" href="#engagingpresenter">
+                            <div class="vert-menu-item" style="border-bottom: 0">
+                                <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                                <label>Engaging Presenter</label>
+                            </div>
+                        </a>
+                    </nav>
+                </div>
+            </aside>
+        </div>
     </div>
-</div>
-<div class="right-container">
+</body>
+  <div class="right-container">
     <div class="callout secondary" id="overview" data-magellan-target="overview">
         <div class="row">
             <h3 class="title">Overview</h3>
@@ -298,6 +304,23 @@
 </div>
 </div>
 </div>
+ <footer class="footer">
+    <div class="row full-width">
+        <div class="small-12 columns">
+            <ul class="footer simple">
+                <li class="small-12"><a href="http://www.inxpo.com" title="Visit us at INXPO.com">&copy; Copyright <span id="dynamicYear"></span> INXPO, Inc. All rights reserved.</a>
+                </li>
+                <li class="small-12"><a href="http://www.inxpo.com/privacy/InXpo_Privacy_Policy.pdf" target="_blank">Privacy Policy</a></li>
+                <li class="small-12"><a href="http://www.inxpo.com/terms/INXPO_Terms_of_Use.pdf" target="_blank">Terms of Use</a></li>
+                <li class="small-12"><a href="#" target="_blank">Contact Us</a></li>
+                <script>
+                    var year = new Date().getFullYear();
+                    document.getElementById('dynamicYear').innerHTML = year;
+                </script>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 
     <script src="assets/js/app.js "></script>
