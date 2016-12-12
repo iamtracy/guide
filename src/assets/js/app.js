@@ -14,3 +14,7 @@ $(function() {
         }
     });
 });
+
+/*Dynamically Sets Year in Footer Copyright Section*/
+var year = new Date().getFullYear();
+document.getElementById('dynamicYear').innerHTML = year;
