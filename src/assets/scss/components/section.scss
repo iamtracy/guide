@@ -1,0 +1,9 @@
+section {
+    margin: 3.25rem 0;
+    article {
+        margin-bottom: 2.7rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
