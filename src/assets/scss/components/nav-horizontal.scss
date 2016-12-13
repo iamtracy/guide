@@ -7,8 +7,16 @@ ul.menu {
     li {
         border-bottom: 4px solid transparent;
         a {
-            padding-top: 1rem;
-            padding-bottom: .7rem;
+            padding-top: 1.25rem;
+            padding-bottom: 1.05rem;
+            .xpo-resources {
+                font-size: .943rem;
+                margin-left: .4rem;
+                float: left;
+                span {
+                    display: block;
+                }
+            }
         }
         &.active {
             border-bottom: 4px solid map-get($foundation-palette, primary);
