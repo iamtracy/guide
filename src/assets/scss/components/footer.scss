@@ -2,9 +2,13 @@ footer {
     margin-left: $desktop-cont-margin;
     padding: 3rem 0;
     border-top: 1px solid $light-gray;
-    li {
-        display: inline;
-        text-decoration: none;
-        margin-right: 1rem;
+    background: $black;
+    ul.footer {
+        margin-left: 0;
+        li {
+            display: inline;
+            text-decoration: none;
+            margin-right: 1rem;
+        }
     }
 }
