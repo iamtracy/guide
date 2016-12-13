@@ -44,9 +44,11 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
     }
 }
 
-.active .vert-menu-item {
-    border-left: 4px solid $light-gray;
-    transition: border-left .75s ease-in-out;
+.active {
+    .vert-menu-item {
+        border-left: 4px solid $light-gray;
+        transition: border-left .75s ease-in-out;
+    }
 }
 
 .vert-menu-item {
