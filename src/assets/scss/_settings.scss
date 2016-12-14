@@ -229,7 +229,7 @@ $closebutton-color-hover: $black;
 $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
-$drilldown-background: $white;
+$drilldown-background: $medium-gray;
 // 16. Dropdown
 // ------------
 $dropdown-padding: 1rem;
@@ -243,7 +243,7 @@ $dropdown-sizes: ( tiny: 100px, small: 200px, large: 400px, );
 $dropdownmenu-arrows: true;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: $white;
+$dropdownmenu-background: $black;
 $dropdownmenu-border: 1px solid $medium-gray;
 // 18. Flex Video
 // --------------
