@@ -1,5 +1,3 @@
-$(document).foundation();
-
 $(function() {
     $('a[href^="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -15,6 +13,10 @@ $(function() {
     });
 });
 
+
+
 /*Dynamically Sets Year in Footer Copyright Section*/
 var year = new Date().getFullYear();
 document.getElementById('dynamicYear').innerHTML = year;
+
+$(document).foundation();
