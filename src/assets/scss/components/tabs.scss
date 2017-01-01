@@ -1,6 +1,16 @@
+ul.tabs {
+    background: #fafafa;
+}
+
 .tabs-title {
     a {
-        color: map-get($foundation-palette, primary);
+        color: $dark-gray;
         font-size: 1rem;
+    }
+    &.is-active {
+        a {
+            background: rgba(0, 0, 0, 0.05);
+            color: map-get($foundation-palette, primary);
+        }
     }
 }
