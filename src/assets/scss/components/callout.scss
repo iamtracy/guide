@@ -14,4 +14,8 @@
         border-left: 3px solid map-get($foundation-palette, primary);
         margin-bottom: 1rem;
     }
+    &.alert {
+        border-left: 3px solid map-get($foundation-palette, alert);
+        margin-bottom: 1rem;
+    }
 }
