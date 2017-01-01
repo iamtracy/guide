@@ -19,7 +19,7 @@ $(function() {
     var href = location.href;
     var pgurl = href.substr(href.lastIndexOf('/') + 1);
     console.log(pgurl);
-    var currentPageElem = $('a[href="' + pgurl + '"]')[0].parentElement;
+    var currentPageElem = $('a[href="./' + pgurl + '"]')[0].parentElement;
     currentPageElem.classList = 'active';
 }();
 
