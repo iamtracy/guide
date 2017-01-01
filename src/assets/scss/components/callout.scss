@@ -10,4 +10,8 @@
     &.warning {
         border-left: 3px solid map-get($foundation-palette, warning);
     }
+    &.primary {
+        border-left: 3px solid map-get($foundation-palette, primary);
+        margin-bottom: 1rem;
+    }
 }
