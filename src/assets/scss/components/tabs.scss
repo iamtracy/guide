@@ -6,6 +6,7 @@ ul.tabs {
     a {
         color: $dark-gray;
         font-size: 1rem;
+        font-weight: 600;
     }
     &.is-active {
         a {
