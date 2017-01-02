@@ -1,21 +1,21 @@
 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
-    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Telephone</a></li>
-    <li class="tabs-title"><a href="#panel2d">Webcam</a></li>
-    <li class="tabs-title"><a href="#panel3d">Interactivity</a></li>
+    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Interactivity</a></li>
+    <li class="tabs-title"><a href="#panel2d">Telephone</a></li>
+    <li class="tabs-title"><a href="#panel3d">Webcam</a></li>
     <li class="tabs-title"><a href="#panel4d">USB Microphone</a></li>
 </ul>
 
 <div class="tabs-content" data-tabs-content="deeplinked-tabs">
     <div class="tabs-panel is-active" id="panel1d">
-        {{> telephone}}
+        {{> interactive}}
     </div>
     <div class="tabs-panel" id="panel2d">
+        {{> telephone}}
+    </div>
+    <div class="tabs-panel" id="panel3d">
         <p>When you begin to plan for your webcast presentation it is important to keep in mind the technical requirements, location and types of content necessary to create an engaging webcast. Following these best practices for delivering a webcast will
             help you create a high quality audio and video webcast with a webcam that will be sure to keep your audiences’ attention.</p>
         {{> webcam}}
-    </div>
-    <div class="tabs-panel" id="panel3d">
-        {{> interactive}}
     </div>
     <div class="tabs-panel" id="panel4d">
         <div class="callout small alert">
