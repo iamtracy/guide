@@ -1,23 +1,39 @@
 <ul class="tabs" data-deep-link="true" data-tabs id="deeplinked-tabs">
-    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Interactivity</a></li>
-    <li class="tabs-title"><a href="#panel2d">Telephone</a></li>
-    <li class="tabs-title"><a href="#panel3d">Webcam</a></li>
-    <li class="tabs-title"><a href="#panel4d">USB Microphone</a></li>
+    <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Live-Day Tips</a></li>
+    <li class="tabs-title"><a href="#panel2d">Interactivity</a></li>
+    <li class="tabs-title"><a href="#panel3d">Telephone</a></li>
+    <li class="tabs-title"><a href="#panel4d">Webcam</a></li>
+    <li class="tabs-title"><a href="#panel5d">Location</a></li>
+    <li class="tabs-title"><a href="#panel6d">Attire</a></li>
+    <li class="tabs-title"><a href="#panel7d">Post Webcast</a></li>
+    <li class="tabs-title"><a href="#panel8d">USB Microphone</a></li>
 </ul>
 
 <div class="tabs-content" data-tabs-content="deeplinked-tabs">
     <div class="tabs-panel is-active" id="panel1d">
-        {{> interactive}}
+        {{> live-day}}
     </div>
     <div class="tabs-panel" id="panel2d">
-        {{> telephone}}
+        {{> interactive}}
     </div>
     <div class="tabs-panel" id="panel3d">
+        {{> telephone}}
+    </div>
+    <div class="tabs-panel" id="panel4d">
         <!--<p>When you begin to plan for your webcast presentation it is important to keep in mind the technical requirements, location and types of content necessary to create an engaging webcast. Following these best practices for delivering a webcast will
             help you create a high quality audio and video webcast with a webcam that will be sure to keep your audiences’ attention.</p>-->
         {{> webcam}}
     </div>
-    <div class="tabs-panel" id="panel4d">
+    <div class="tabs-panel" id="panel5d">
+        {{> location}}
+    </div>
+    <div class="tabs-panel" id="panel6d">
+        {{> attire}}
+    </div>
+    <div class="tabs-panel" id="panel7d">
+        {{> post-webcast}}
+    </div>
+    <div class="tabs-panel" id="panel8d">
         <div class="callout small alert">
             <p><b>Internal Note</b>: A lot of this content is covered in other areas. I propose this be consolidated and/or removed</p>
         </div>
