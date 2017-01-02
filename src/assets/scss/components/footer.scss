@@ -17,6 +17,9 @@ footer {
         }
         a {
             color: rgba(255, 255, 255, 0.4);
+            &:hover {
+                color: #999;
+            }
         }
     }
 }
