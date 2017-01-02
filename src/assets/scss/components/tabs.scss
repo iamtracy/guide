@@ -1,0 +1,24 @@
+ul.tabs {
+    background: #fafafa;
+}
+
+.tabs-panel {
+    h4 {
+        font-size: 1.075rem;
+        margin-bottom: .12rem;
+    }
+}
+
+.tabs-title {
+    a {
+        color: $dark-gray;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    &.is-active {
+        a {
+            background: rgba(0, 0, 0, 0.05);
+            color: map-get($foundation-palette, primary);
+        }
+    }
+}
