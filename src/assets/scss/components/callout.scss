@@ -12,7 +12,11 @@
     }
     &.primary {
         border-left: 3px solid map-get($foundation-palette, primary);
+        margin-top: 1rem;
         margin-bottom: 1rem;
+    }
+    &.telephone {
+        margin-bottom: 0;
     }
     &.alert {
         border-left: 3px solid map-get($foundation-palette, alert);
