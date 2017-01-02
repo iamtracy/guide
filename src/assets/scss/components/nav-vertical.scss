@@ -1,4 +1,5 @@
 $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
+$vert-nav-items: lighten($light-gray, 8%);
 .left-off-canvas-menu {
     transform: none;
     position: fixed;
@@ -41,7 +42,7 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 
 .active {
     .vert-menu-item {
-        border-left: 4px solid $light-gray;
+        border-left: 4px solid darken($light-gray, 3%);
         transition: border-left .75s ease-in-out;
     }
 }
@@ -51,8 +52,14 @@ $box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
     background: $dark-gray;
     border-bottom: 1px solid $medium-gray;
     border-left: 4px solid transparent;
+    label {
+        color: $vert-nav-items
+    }
+    i {
+        color: $vert-nav-items;
+    }
     &:hover {
-        background: lighten($dark-gray, 35%);
+        background: lighten($dark-gray, 15%);
         /* Safari */
         -webkit-transition: background .2s ease-in;
         transition: background .3s ease-in;

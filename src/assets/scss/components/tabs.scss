@@ -2,6 +2,16 @@ ul.tabs {
     background: #fafafa;
 }
 
+.tabs-panel {
+    h4 {
+        font-size: 1.1rem;
+        margin-bottom: .45rem;
+        &.list-head {
+            margin-bottom: .1rem;
+        }
+    }
+}
+
 .tabs-title {
     a {
         color: $dark-gray;
