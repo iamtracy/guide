@@ -87,14 +87,14 @@ $vert-nav-items: lighten($light-gray, 8%);
             text-align: right;
             &.is-active {
                 a {
-                    background: $light-gray;
+                    background: lighten($light-gray, 15%);
                     color: $dark-gray;
                     width: calc(100% + 10%);
                     transition: width .37s ease-in-out;
                 }
             }
             a {
-                background: $medium-gray;
+                background: lighten($medium-gray, 4%);
                 color: $light-gray;
             }
         }
