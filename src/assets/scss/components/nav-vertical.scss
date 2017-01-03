@@ -79,6 +79,10 @@ $vert-nav-items: lighten($light-gray, 8%);
     margin: 0;
 }
 
+.hide {
+    transition: 1s ease;
+}
+
 [data-toggle="dropdown-tabs-content"] {
     .tabs {
         border: 0;
