@@ -1,5 +1,3 @@
-$(document).foundation();
-
 $(function() {
     $('a[href^="#"]:not([href^="#panel"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -23,6 +21,12 @@ $(function() {
     currentPageElem.classList = 'active';
 }();
 
+$('[data-toggle="dropdown"]').click(function() {
+    $('[data-toggle="dropdown-tabs-content"]').toggleClass('hide');
+})
+
 /*Dynamically Sets Year in Footer Copyright Section*/
 var year = new Date().getFullYear();
 document.getElementById('dynamicYear').innerHTML = year;
+
+$(document).foundation();

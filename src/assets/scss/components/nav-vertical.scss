@@ -65,3 +65,13 @@ $vert-nav-items: lighten($light-gray, 8%);
         transition: background .3s ease-in;
     }
 }
+
+.best-practice-container {
+    position: relative;
+}
+
+.best-practice {
+    position: absolute;
+    top: 33%;
+    right: 3%;
+}
