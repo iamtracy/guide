@@ -78,3 +78,43 @@ $vert-nav-items: lighten($light-gray, 8%);
     padding: 2.3rem 1.1rem 2.25rem 1rem;
     margin: 0;
 }
+
+[data-toggle="dropdown-tabs-content"] {
+    .tabs {
+        border: 0;
+        >.tabs-title {
+            border-bottom: 1px solid $dark-gray;
+            text-align: right;
+            &.is-active {
+                a {
+                    background: $light-gray;
+                    color: $dark-gray;
+                    width: calc(100% + 10%);
+                    transition: width .37s ease-in-out;
+                }
+            }
+            a {
+                background: $medium-gray;
+                color: $light-gray;
+            }
+        }
+    }
+}
+
+.tabs-title {
+    float: left;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.left-off-canvas-menu {
+    .icon-bar {
+        a {
+            margin: 0 auto;
+            width: 100%;
+            display: block;
+            float: left;
+        }
+    }
+}

@@ -107,7 +107,7 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $light-gray;
+$anchor-color: map-get($foundation-palette, primary);
 $anchor-color-hover: map-get($foundation-palette, $light-gray);
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
