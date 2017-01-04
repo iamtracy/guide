@@ -93,7 +93,7 @@ $vert-nav-items: lighten($light-gray, 8%);
                 a {
                     background: lighten($light-gray, 15%);
                     color: $dark-gray;
-                    width: calc(100% + 10%);
+                    width: calc(100% + 4%);
                     transition: width .37s ease-in-out;
                 }
             }
