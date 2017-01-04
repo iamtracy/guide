@@ -1,11 +1,9 @@
-$box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 $vert-nav-items: lighten($light-gray, 8%);
 .left-off-canvas-menu {
     transform: none;
     position: fixed;
     width: 0;
     height: 100%;
-    box-shadow: $box-shadow;
     z-index: 100;
     .icon-bar {
         text-align: center;
@@ -93,8 +91,6 @@ $vert-nav-items: lighten($light-gray, 8%);
                 a {
                     background: lighten($light-gray, 15%);
                     color: $dark-gray;
-                    width: calc(100% + 4%);
-                    transition: width .37s ease-in-out;
                 }
             }
             a {
