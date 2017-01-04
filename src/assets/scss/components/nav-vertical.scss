@@ -99,7 +99,7 @@ $vert-nav-items: lighten($light-gray, 8%);
             }
             a {
                 background: lighten($medium-gray, 4%);
-                color: $light-gray;
+                color: lighten($light-gray, 5%);
             }
         }
     }
