@@ -1,5 +1,14 @@
 .card {
     color: $dark-gray;
+    .card-section div {
+        text-align: center;
+    }
+    i {
+        color: map-get($foundation-palette, primary);
+        font-weight: $global-weight-light;
+        margin-left: .5rem;
+        font-size: 1rem;
+    }
     h5 {
         margin-top: .6rem;
         font-weight: $global-weight-bold;
