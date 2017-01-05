@@ -10,7 +10,7 @@ ul.tabs {
     border: 0;
     &.vertical {
         border: 0;
-        padding-left: 1rem;
+        padding-left: 1.25rem;
         .tabs-panel {
             padding-top: 0;
             padding: 0;
@@ -20,6 +20,7 @@ ul.tabs {
             }
             p {
                 margin-bottom: 1.5rem;
+                padding-right: .6rem;
             }
         }
     }
