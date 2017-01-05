@@ -18,3 +18,14 @@
         border: 1px solid $light-gray;
     }
 }
+
+.gallery-card-container {
+    .column {
+        position: relative;
+    }
+    .play-video {
+        position: absolute;
+        top: 100%;
+        left: 35%;
+    }
+}
