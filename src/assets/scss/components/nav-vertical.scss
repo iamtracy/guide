@@ -1,11 +1,9 @@
-$box-shadow: 3px 0 6px rgba(0, 0, 0, 0.24);
 $vert-nav-items: lighten($light-gray, 8%);
 .left-off-canvas-menu {
     transform: none;
     position: fixed;
     width: 0;
     height: 100%;
-    box-shadow: $box-shadow;
     z-index: 100;
     .icon-bar {
         text-align: center;
@@ -79,6 +77,10 @@ $vert-nav-items: lighten($light-gray, 8%);
     margin: 0;
 }
 
+.hide {
+    transition: 1s ease;
+}
+
 [data-toggle="dropdown-tabs-content"] {
     .tabs {
         border: 0;
@@ -87,15 +89,13 @@ $vert-nav-items: lighten($light-gray, 8%);
             text-align: right;
             &.is-active {
                 a {
-                    background: $light-gray;
+                    background: lighten($light-gray, 15%);
                     color: $dark-gray;
-                    width: calc(100% + 10%);
-                    transition: width .37s ease-in-out;
                 }
             }
             a {
-                background: $medium-gray;
-                color: $light-gray;
+                background: lighten($medium-gray, 4%);
+                color: lighten($light-gray, 5%);
             }
         }
     }
