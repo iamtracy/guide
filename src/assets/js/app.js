@@ -35,4 +35,21 @@ $('[data-toggle="dropdown"]').click(function() {
 var year = new Date().getFullYear();
 document.getElementById('dynamicYear').innerHTML = year;
 
+function murrify() {
+    let mur = $('img');
+    let murArray = mur.toArray();
+    murArray.forEach(item => item.src = 'https://www.fillmurray.com/' + item.width + '/' + item.height);
+}
+
+function piperfy() {
+    let piper = $('.fa').not('[data-toggle="dropdown"]');
+    let pipeArray = piper.toArray();
+    pipeArray.forEach(item => {
+        console.log(item)
+        item.classList = 'fa fa-pied-piper-alt';
+    })
+}
+
+
+
 $(document).foundation();
