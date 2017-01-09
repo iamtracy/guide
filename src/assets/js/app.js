@@ -45,7 +45,6 @@ function piperfy() {
     let piper = $('.fa').not('[data-toggle="dropdown"]');
     let pipeArray = piper.toArray();
     pipeArray.forEach(item => {
-        console.log(item)
         item.classList = 'fa fa-pied-piper-alt';
     })
 }
