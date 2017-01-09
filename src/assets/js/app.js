@@ -13,14 +13,19 @@ $(function() {
     });
 });
 
-// ! function() {
-//     var href = location.href;
-//     var pgurl = href.substr(href.lastIndexOf('/') + 1);
-//     console.log(pgurl);
-//     var currentPageElem = $('a[href="./' + pgurl + '"]')[0];
-//     currentPageElem.classList = 'active';
-//     console.log(currentPageElem)
-// }();
+function sideNav() {
+    if ($(window).width() < 769) {
+        $('.off-canvas-wrap').removeClass('move-right');
+        $('.left-off-canvas-toggle').show();
+    } else {
+        $('.off-canvas-wrap').addClass('move-right');
+        $('.left-off-canvas-toggle').hide();
+    }
+}
+
+$(window).resize(function() {
+    sideNav();
+});
 
 $('[data-toggle="dropdown"]').click(function() {
     $('[data-toggle="dropdown-tabs-content"]').toggleClass('hide');
