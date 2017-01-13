@@ -35,28 +35,10 @@ $('[data-toggle="dropdown"]').click(function() {
 var year = new Date().getFullYear();
 document.getElementById('dynamicYear').innerHTML = year;
 
-function memeify() {
-    let mur = $('img');
-    let murArray = mur.toArray();
-    murArray.forEach((item, index) => {
-        if (index % 2 === 0) {
-            item.src = 'https://www.fillmurray.com/' + item.width + '/' + item.height;
-        } else if (index % 3 === 0) {
-            item.src = 'https://www.stevensegallery.com/' + item.width + '/' + item.height;
-        } else {
-            item.src = 'https://www.placecage.com/g/' + item.width + '/' + item.height;
-        }
-    });
-}
-
 function piperfy() {
     let piper = $('.fa').not('[data-toggle="dropdown"]');
     let pipeArray = piper.toArray();
-    pipeArray.forEach(item => {
-        item.classList = 'fa fa-pied-piper-alt';
-    })
+    pipeArray.forEach(item => item.classList = 'fa fa-pied-piper-alt');
 }
-
-
 
 $(document).foundation();
