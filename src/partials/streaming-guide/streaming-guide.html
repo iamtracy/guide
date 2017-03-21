@@ -2,8 +2,7 @@
   <div class="row">
     <div class="large-12 columns">
       <h3 class="title">Streaming Guide</h3>
-      <p>This document reviews the specifications for video files. The below specifications are recommendations for the best user experience. If for some reason you find that you need to deviate from the recommended specifications, please contact your INXPO
-        project manager or if self-service, contact the INXPO Solutions team at <a href="mailto:vxhelp@inxpo.com">vxhelp@inxpo.com</a>.</p>
+      <p>“How-to” Guide and FAQ.</p>
     </div>
   </div>
 </div>
@@ -11,70 +10,300 @@
   <div class="large-12 columns">
     <section class="overview-section">
       <article>
-        <h4>Video Specifications:</h4>
+        <h4>Network and Bandwidth Considerations:</h4>
+        <p>Test your Internet connection bandwidth around the world with this interactive broadband <a href="#">speed test</a></p>
         <ul>
           <li>
-            <p><b>Video Dimensions: </b>800px x 450px</p>
+            <p>The dedicated line must have at least 3 Mbps of available upstream and downstream bandwidth</p>
           </li>
           <li>
-            <p><b>Video Bitrate: </b>650Kbps to 750Kbps</p>
+            <p><b>This test should be performed at least 24 hours prior to the presentation start time. If it is found that bandwidth is insufficient, an alternate setup may be required.</b></p>
+          </li>
+        </ul>
+        <p>Use the <a href="https://vts.inxpo.com/scripts/Server.nxp?LASCmd=AI:4;O:PortChecker.htm">Port Check</a> link to test your Internet connection to verify there are not any firewall or port issues on your network that will prohibit proper streaming.</p>
+        <ul>
+          <li>
+            <p>The FME stream should have a dedicated internet line used only by the encoder</p>
           </li>
           <li>
-            <p><b>Video File Type: </b>MP4</p>
+            <p>The dedicated line should allow direct RTMP:1935 packets to the INXPO origin server</p>
           </li>
           <li>
-            <p><b>Video Codec: </b>H.264</p>
+            <p>The dedicated line should be allowed to VPN to the INXPO origin server (if needed)</p>
+          </li>
+        </ul>
+        <p>Please ensure that there is a primary and a secondary stream. In case the primary stream fails, the secondary stream can be used as a backup.</p>
+        <ul>
+          <li>
+            <p>There should be two encoding devices that have separate streams configured on each machine.</p>
           </li>
           <li>
-            <p><b>Video FPS: </b>29.97</p>
+            <p>The stream names need to be unique for each of the machines so they display correctly in the Presenter list.</p>
+          </li>
+        </ul>
+        <p>Please ensure that all power management functions on the computer are turned off so that the computer does not go to sleep during the streaming.</p>
+        <div class="callout small warning">
+          <p><b>Please do not access the webcast on the same machine that is encoding the stream.</b></p>
+        </div>
+      </article>
+      <article>
+        <h4>Codecs:</h4>
+        <p>Please be sure to match your encoder settings with the video settings that you have established in XPOCAST, or refer to the specifications that your webcast engineer recommends for your presentation.</p>
+        <div class="callout small primary">
+          <p>If the codec being used does not match the XPOCAST settings, an alert will display in the Source Preview window. Always encode the stream using the proper codec so that the presentation file saves correctly in XPOCAST.</p>
+        </div>
+        <h5>FLV</h5>
+        <ul>
+          <li>
+            <p>Flash presentations require the VP6 codec for video, and the MP3 codec for audio.</p>
           </li>
           <li>
-            <p><b>Audio Bitrate: </b>96Kbps</p>
+            <p>Typical streams run around 500 Kbps video, 48 Kbps audio (about 550 Kbps combined)</p>
+          </li>
+        </ul>
+        <h5>H.264</h5>
+        <ul>
+          <li>
+            <p>H.264 or x264 codec for video, AAC codec for audio.</p>
           </li>
           <li>
-            <p><b>Audio Specifications: </b>44000Hz, Mono</p>
+            <p>Bitrate is also determined by video resolution and content. Faster motion and higher detailed videos will increase the bandwidth requirements.</p>
+          </li>
+        </ul>
+        <h5>H.264 (Adaptive)</h5>
+        <ul>
+          <li>
+            <p>Same as H.264 presentations, but streams at a much higher bitrate (1500-2000 Kbps) which XPOCAST automatically adjusts for each attendee based on their bandwidth.</p>
           </li>
           <li>
-            <p><b>Audio Codec: </b>MP3 or AAC</p>
+            <p>Users with insufficient bandwidth will receive an “audio-only” stream.</p>
           </li>
         </ul>
       </article>
       <article>
-        <h4>Video Application:</h4>
+        <h4>Flash Media Live Encoder:</h4>
+        <p>Flash Media Live Encoder is a free Adobe program used to stream video sources that are connected to the encoding laptop. It’s available on PC and Mac, but usually operates more effectively on PC.</p>
+        <p><a href="http://www.adobe.com/products/flashmediaserver/flashmediaencoder/">Download</a> and install the latest version of Adobe Flash Media Live Encoder.</p>
+        <h5>Configure the encoding options</h5>
+        <img src="./assets/img/streaming/XPOCAST_Streaming.jpg" alt="">
         <ul>
           <li>
-            <p>There are many ways to incorporate video into your online event. The specifications above can be used across the INXPO platform.</p>
+            <p>Select your capture device in the video and audio “Device” drop‐down menus, highlighted above in red.</p>
+          </li>
+          <li>
+            <p>Configure the video resolution and bitrate settings, based upon the instructions that you receive from INXPO. This area is highlighted above in blue.</p>
+          </li>
+          <li>
+            <p>Ensure your keyframe is set to 1 second or the lowest keyframe available. This setting can be found by accessing the icon that is located next to the “Format” option:</p>
+          </li>
+          <li>
+            <p>Enter the “FMS URL” and “Stream” information as provided by INXPO. This area is highlighted above in yellow.</p>
+          </li>
+          <li>
+            <p>Confirm that the “Save to File” box is checked. You can select a specific location for the backup file using the “Browse” button. This area is highlighted above in green.</p>
+          </li>
+        </ul>
+        <p>Click “Start” to begin streaming.</p>
+        <p><b>If you receive an error message:</b></p>
+        <ul>
+          <li>
+            <p>Check the “Encoding Log” for details, highlighted above in purple.</p>
+          </li>
+          <li>
+            <p>If you manually type in the “FMS URL” – make sure there isn’t a space at the very end of the address, and that all case-sensitive letters match correctly.</p>
+          </li>
+          <li>
+            <p>The “Stream” name needs to have <b>?Type=2</b> at the end in order to display in XPOCAST’s presenter list. This is case sensitive and should not have any spaces, before or after.</p>
           </li>
         </ul>
       </article>
       <article>
-        <h4>Online Events:</h4>
+        <h4>Wirecast:</h4>
+        <p>Wirecast is a premium program that encodes, switches, and streams video sources and/or media files from your encoding laptop to the XPOCAST platform.</p>
+        <p><a href="http://www.telestream.net/wirecast/store.asp">Download</a> and install Wirecast. Note that Wirecast’s latest release, “Version 6,” only supports H.264 video codecs. If you would like to use it for an FLV presentation, you’ll need to download
+          a retrograde version of Wirecast, “Version 5.”</p>
+        <p><b>Configure the encoding options:</b></p>
         <ul>
           <li>
-            <p>Welcome video - A great way to introduce your virtual environment to attendees</p>
+            <p>Using the menu bar at the top of the Screen, go to “Output” > “Output Settings”</p>
           </li>
           <li>
-            <p>Booth videos - A nice way to tell your company story inside of your sponsor booth Webcasting</p>
+            <p>At the prompt, select “RTMP Server” as the destination and click “Okay”</p>
+          </li>
+          <li>
+            <p>Click the gear icon to the right of the “Encoding” drop down list and choose “New Preset”</p>
+          </li>
+          <li>
+            <p>Name your preset and then configure to match the XPOCAST settings you’re using.</p>
+          </li>
+        </ul>
+        <p>Here are a few examples of Encoder Presets for various setups:</p>
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <p>FLV, 640x360, 29.97fps, 550kbps total bitrate</p>
+            <img src="./assets/img/streaming/550kbps.jpg" alt="">
+          </div>
+          <div class="small-12 medium-6 columns">
+            <p>H.264, 640x360, 29.97fps, 650kbps total bitrate</p>
+            <img src="./assets/img/streaming/550kbps.jpg" alt="">
+          </div>
+        </div>
+        <ul>
+          <li>
+            <p>Note that Wirecast may slightly adjust the width/height settings. You’ll receive a prompt when saving.</p>
+          </li>
+          <li>
+            <p>Be sure to use the “Baseline” profile for H.264 presets to ensure connections for XPOCAST mobile users.</p>
           </li>
         </ul>
       </article>
       <article>
-        <h4>Webcasting:</h4>
+        <h4>Encoder Template File (XML):</h4>
+        <p>A quick and easy way to set up your encoding settings is to download the encoder template from your XPOCAST presentation and then load it as a preset into your encoding program.</p>
+        <div class="row">
+          <div class="small-12 medium-3 columns">
+            <p>Template download in BTV or PRIME:</p>
+            <img src="./assets/img/streaming/btv-prime.jpg" alt="">
+          </div>
+          <div class="small-12 medium-9 columns">
+            <p>H.264, 640x360, 29.97fps, 650kbps total bitrate</p>
+            <img src="./assets/img/streaming/xpocast.jpg" alt="">
+          </div>
+        </div>
         <ul>
           <li>
-            <p>Video can be your main webcast media</p>
+            <p>Pick a folder destination for your XML file, and save it to your computer.</p>
           </li>
           <li>
-            <p>Video slides are a great way to break up your presentation content</p>
+            <p>Open your encoding program and load the XML file:</p>
           </li>
         </ul>
-      </article>
-      <article>
-        <h4>Video Considerations:</h4>
-        <p>When using video slides during webcam or FME webcasts, viewers will stream the combined bit rate of the main XPOCAST media and the video slide. Please be sure to specify the FPS when submitting videos. When submitting multiple videos, please make
-          sure the specs are consistent across all files.</p>
-        <p>Please Note: It is strongly recommended that sessions primarily targeting the APAC region use a bitrate of 450 Kbps or lower. For webcasts including video, you will need a minimum Internet connection of 450Kbps. INXPO recommends a connection of
-          750Kbps or higher.</p>
+        <div class="row">
+          <div class="small-12 medium-3 columns">
+            <p>FMLE: File > Open Profile</p>
+            <img src="./assets/img/streaming/openProfile.jpg" alt="">
+          </div>
+          <div class="small-12 medium-9 columns">
+            <p>Wirecast: Output > Output Settings</p>
+            <img src="./assets/img/streaming/outputSettings.jpg" alt="">
+          </div>
+        </div>
+        <ul>
+          <li>
+            <p>When the template is loaded, the Encoding Options will automatically be filled in to coincide with the settings in XPOCAST. (<b>Note that in Wirecast, only the stream name and RTMP address will be loaded via the XML file</b>. All other encoding
+              settings will need to be adjusted manually. Please reference page 3 for additional information on this process.)</p>
+          </li>
+          <li>
+            <p>Double check your output bitrates to ensure your audience can maintain a stable connection, and then start the stream.</p>
+          </li>
+          <li>
+            <p>Upon successful connection, the stream will display in the Presenter list in XPOCAST and can be selected as the source once the presentation is live.</p>
+          </li>
+        </ul>
+        <div class="callout small primary">
+          <p>Note: Before the live day, make sure you have tested your equipment and workflow thoroughly, confirming you have successfully streamed to XPOCAST.</p>
+        </div>
+        <ol>
+          <li>
+            <p>Where can I download the XML file containing the webcast streaming information?</p>
+            <p>The XML file can be downloaded inside Program Wizard under the Settings tab. In the bottom left corner click on “Download Encoder Template”</p>
+          </li>
+          <li>
+            <p>How do I load the XML file inside of my encoding program?</p>
+            <p>For FMLE, click on “File” in the top left corner and select, “Open Profile.” In Wirecast, click “Output” > “Output Settings” > “Open FMLE XML File.” Choose the XML file from your local machine. Please reference the screenshots on Page 4 of
+              this guide for more details.</p>
+          </li>
+          <li>
+            <p>Why can I not see the stream name in the presenter list?</p>
+            <p>Please make sure that that in addition to hitting the connect button in FMLE, you must also click the Start button to connect the stream to the console. Double-check and make sure that the case sensitive FMS URL and Stream Name have been entered
+              correctly with no additional spaces at the end.</p>
+          </li>
+
+          <div class="row">
+            <div class="small-12 medium-3 columns">
+              <p>Once the stream is connected correctly, it should appear by name in the presenter list inside the console. A microphone icon should also light up.</p>
+              <img src="./assets/img/streaming/connectCorrectly.jpg" alt="">
+            </div>
+            <div class="small-12 medium-9 columns">
+              <img src="./assets/img/streaming/streamName.jpg" alt="">
+            </div>
+          </div>
+          <li>
+            <p>I can see the stream name in the presenter list, but how do I confirm video and audio are coming through?</p>
+            <p>Once verified in the presenter list, you can preview video and audio by clicking on the preview button in the top left of the console. Once you have opened the window, click on the name under sources.</p>
+          </li>
+          <div class="row">
+            <div class="small-12 medium-3 columns">
+              <img src="./assets/img/streaming/preview.jpg" alt="">
+            </div>
+            <div class="small-12 medium-9 columns">
+              <img src="./assets/img/streaming/sourcePreview.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <p>Video and Audio will then appear in the left window titled “Local.” To simulate the audience experience, click the green preview button.</p>
+              <img src="./assets/img/streaming/localPreview.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <p>The video will then appear in the right window (There will be a slight delay). At this point, you will see video in both windows.</p>
+              <img src="./assets/img/streaming/dualLocalPreview.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 columns">
+              <p>Simply press the clear button in the left “Local” window and you will be able to clearly verify the audience experience.</p>
+              <img src="./assets/img/streaming/clearLocalPreview.jpg" alt="">
+            </div>
+          </div>
+          <li>
+            <p>How do I start the presentation and push the stream live?</p>
+            <p>When you are ready to begin, simply press the START button in the top left corner and then click on the microphone icon next to the stream name in the presenter list.</p>
+          </li>
+          <li>
+            <p>How do I end the presentation and stop the stream?</p>
+            <p>When the presentation has concluded, click on the END button in the top left corner.</p>
+          </li>
+          <p>You will be prompted with a new window asking if you would like to end the stream. To save the recording, make sure you leave the “Save Recording” box checked. If you would like to place the presentation on demand right away check the box labeled
+            “Place presentation On Demand” (Please note that checking or unchecking this box will have no effect on the actual recording).</p>
+          <img src="./assets/img/streaming/saveRecording.jpg" alt="">
+          <p>Once you have verified the correct boxes are checked, click YES to end the session. If you hit the END button by accident or too early, simply click the NO button and the presentation will continue to run. Once the presentation has ended, go
+            in to FMLE, hit STOP and then hit DISCONNECT.</p>
+          <img src="./assets/img/streaming/endPresentation.jpg" alt="">
+          <li>
+            <p>Why is my audio and video choppy?</p>
+            <p>Please make sure you have a sufficient internet connection on site. We recommend that the encoding machine uses a 3MB hardwired dedicated line. Make sure that Wi-Fi is turned off on encoding machine. Speak with you IT provider before the live
+              day to insure you have the bandwidth required.</p>
+          </li>
+          <li>
+            <p>I can see video and hear audio as an Admin but attendees say they cannot? How can I verify?</p>
+            <p>First, open up the source preview window in the top left corner of the console. Once opened click on the stream name in the left column under SOURCES. The live stream (with a slight delay) will appear in the far right window. Right click on
+              the stream in the right window and select open details.</p>
+          </li>
+          <img src="./assets/img/streaming/openDetails.jpg" alt="">
+          <p>In the delivery methods drop down, select RTMP CDN. If you can see and hear the stream, the issue is isolated to that attendee. If you cannot hear or see the stream, there is an issue with the transcoding process.</p>
+          <img src="./assets/img/streaming/deliveryMethods.jpg" alt="">
+          <p>Remaining inside the Preview window, click on the stream “reload” button to the right of the name. This will reload the source in the console.</p>
+          <p>If the issues continues, stop the presentation by hitting the <b>END</b> button and saving the media. <b>Stop and disconnect</b> the stream from the platform from inside the encoder.</p>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <img src="./assets/img/streaming/end.jpg" alt="">
+            </div>
+            <div class="small-12 medium-8 columns">
+              <img src="./assets/img/streaming/endYes.jpg" alt="">
+            </div>
+          </div>
+          <p>Reload the presentation and reconnect the stream to the platform. Confirm the issue has been resolved using the Preview window.</p>
+          <img src="./assets/img/streaming/reload.jpg" alt="">
+          <p>If the issue still persists, please contact INXPO support or your Webcast Engineer.</p>
+          <li>
+            <p>Why is my audio and video out of sync?</p>
+            <p>Make sure that your framerates match across all of your settings on the camera, the encoder, and the XPOCAST presentation. The standard encoding fps for streaming is 29.97. If the video is in sync in your encoding program but out of sync on
+              the stream in XPOCAST, it could be an internet issue. Ensure you have the appropriate bandwidth available and that you are connected using a hardwired internet connection.</p>
+          </li>
+        </ol>
       </article>
     </section>
   </div>
