@@ -8,7 +8,7 @@
 </div>
 <div class="row">
   <div class="large-12 columns">
-    <section class="overview-section">
+    <section class="streaming-section">
       <article>
         <h4>Network and Bandwidth Considerations:</h4>
         <p>Test your Internet connection bandwidth around the world with this interactive broadband <a href="#">speed test</a></p>
@@ -43,14 +43,14 @@
         </ul>
         <p>Please ensure that all power management functions on the computer are turned off so that the computer does not go to sleep during the streaming.</p>
         <div class="callout small warning">
-          <p><b>Please do not access the webcast on the same machine that is encoding the stream.</b></p>
+          <p>Please do not access the webcast on the same machine that is encoding the stream.</p>
         </div>
       </article>
       <article>
         <h4>Codecs:</h4>
-        <p>Please be sure to match your encoder settings with the video settings that you have established in XPOCAST, or refer to the specifications that your webcast engineer recommends for your presentation.</p>
         <div class="callout small primary">
-          <p>If the codec being used does not match the XPOCAST settings, an alert will display in the Source Preview window. Always encode the stream using the proper codec so that the presentation file saves correctly in XPOCAST.</p>
+          <p>Please be sure to match your encoder settings with the video settings that you have established in XPOCAST, or refer to the specifications that your webcast engineer recommends for your presentation. If the codec being used does not match the
+            XPOCAST settings, an alert will display in the Source Preview window. Always encode the stream using the proper codec so that the presentation file saves correctly in XPOCAST.</p>
         </div>
         <h5>FLV</h5>
         <ul>
@@ -85,7 +85,12 @@
         <p>Flash Media Live Encoder is a free Adobe program used to stream video sources that are connected to the encoding laptop. It’s available on PC and Mac, but usually operates more effectively on PC.</p>
         <p><a href="http://www.adobe.com/products/flashmediaserver/flashmediaencoder/">Download</a> and install the latest version of Adobe Flash Media Live Encoder.</p>
         <h5>Configure the encoding options</h5>
-        <img src="./assets/img/streaming/XPOCAST_Streaming.jpg" alt="">
+        <div class="row">
+          <div class="small-12 medium-8 columns">
+            <p>FLV, 640x360, 29.97fps, 550kbps total bitrate</p>
+            <img src="./assets/img/streaming/XPOCAST_Streaming.jpg" alt="">
+          </div>
+        </div>
         <ul>
           <li>
             <p>Select your capture device in the video and audio “Device” drop‐down menus, highlighted above in red.</p>
@@ -139,11 +144,11 @@
         </ul>
         <p>Here are a few examples of Encoder Presets for various setups:</p>
         <div class="row">
-          <div class="small-12 medium-6 columns">
+          <div class="small-12 medium-4 columns">
             <p>FLV, 640x360, 29.97fps, 550kbps total bitrate</p>
             <img src="./assets/img/streaming/550kbps.jpg" alt="">
           </div>
-          <div class="small-12 medium-6 columns">
+          <div class="small-12 medium-4 columns float-left">
             <p>H.264, 640x360, 29.97fps, 650kbps total bitrate</p>
             <img src="./assets/img/streaming/550kbps.jpg" alt="">
           </div>
@@ -161,11 +166,11 @@
         <h4>Encoder Template File (XML):</h4>
         <p>A quick and easy way to set up your encoding settings is to download the encoder template from your XPOCAST presentation and then load it as a preset into your encoding program.</p>
         <div class="row">
-          <div class="small-12 medium-3 columns">
+          <div class="small-12 medium-4 columns">
             <p>Template download in BTV or PRIME:</p>
             <img src="./assets/img/streaming/btv-prime.jpg" alt="">
           </div>
-          <div class="small-12 medium-9 columns">
+          <div class="small-12 medium-4 columns float-left">
             <p>H.264, 640x360, 29.97fps, 650kbps total bitrate</p>
             <img src="./assets/img/streaming/xpocast.jpg" alt="">
           </div>
@@ -179,11 +184,11 @@
           </li>
         </ul>
         <div class="row">
-          <div class="small-12 medium-3 columns">
+          <div class="small-12 medium-4 columns">
             <p>FMLE: File > Open Profile</p>
             <img src="./assets/img/streaming/openProfile.jpg" alt="">
           </div>
-          <div class="small-12 medium-9 columns">
+          <div class="small-12 medium-4 columns float-left">
             <p>Wirecast: Output > Output Settings</p>
             <img src="./assets/img/streaming/outputSettings.jpg" alt="">
           </div>
@@ -200,9 +205,6 @@
             <p>Upon successful connection, the stream will display in the Presenter list in XPOCAST and can be selected as the source once the presentation is live.</p>
           </li>
         </ul>
-        <div class="callout small primary">
-          <p>Note: Before the live day, make sure you have tested your equipment and workflow thoroughly, confirming you have successfully streamed to XPOCAST.</p>
-        </div>
         <ol>
           <li>
             <p>Where can I download the XML file containing the webcast streaming information?</p>
@@ -218,42 +220,40 @@
             <p>Please make sure that that in addition to hitting the connect button in FMLE, you must also click the Start button to connect the stream to the console. Double-check and make sure that the case sensitive FMS URL and Stream Name have been entered
               correctly with no additional spaces at the end.</p>
           </li>
-
           <div class="row">
-            <div class="small-12 medium-3 columns">
+            <div class="small-12 medium-4 columns">
               <p>Once the stream is connected correctly, it should appear by name in the presenter list inside the console. A microphone icon should also light up.</p>
               <img src="./assets/img/streaming/connectCorrectly.jpg" alt="">
             </div>
-            <div class="small-12 medium-9 columns">
+            <div class="small-12 medium-4 columns float-left">
               <img src="./assets/img/streaming/streamName.jpg" alt="">
             </div>
           </div>
           <li>
             <p>I can see the stream name in the presenter list, but how do I confirm video and audio are coming through?</p>
-            <p>Once verified in the presenter list, you can preview video and audio by clicking on the preview button in the top left of the console. Once you have opened the window, click on the name under sources.</p>
           </li>
           <div class="row">
-            <div class="small-12 medium-3 columns">
+            <div class="small-12 medium-4 columns">
+              <p>Once verified in the presenter list, you can preview video and audio by clicking on the preview button in the top left of the console.</p>
               <img src="./assets/img/streaming/preview.jpg" alt="">
             </div>
-            <div class="small-12 medium-9 columns">
+            <div class="small-12 medium-4 columns float-left">
+              <p>Once you have opened the window, click on the name under sources.</p>
               <img src="./assets/img/streaming/sourcePreview.jpg" alt="">
             </div>
           </div>
           <div class="row">
-            <div class="small-12 columns">
+            <div class="small-12 medium-4 columns">
               <p>Video and Audio will then appear in the left window titled “Local.” To simulate the audience experience, click the green preview button.</p>
               <img src="./assets/img/streaming/localPreview.jpg" alt="">
             </div>
-          </div>
-          <div class="row">
-            <div class="small-12 columns">
+            <div class="small-12 medium-4 columns float-left">
               <p>The video will then appear in the right window (There will be a slight delay). At this point, you will see video in both windows.</p>
               <img src="./assets/img/streaming/dualLocalPreview.jpg" alt="">
             </div>
           </div>
           <div class="row">
-            <div class="small-12 columns">
+            <div class="small-12 medium-4 columns">
               <p>Simply press the clear button in the left “Local” window and you will be able to clearly verify the audience experience.</p>
               <img src="./assets/img/streaming/clearLocalPreview.jpg" alt="">
             </div>
@@ -266,12 +266,18 @@
             <p>How do I end the presentation and stop the stream?</p>
             <p>When the presentation has concluded, click on the END button in the top left corner.</p>
           </li>
-          <p>You will be prompted with a new window asking if you would like to end the stream. To save the recording, make sure you leave the “Save Recording” box checked. If you would like to place the presentation on demand right away check the box labeled
-            “Place presentation On Demand” (Please note that checking or unchecking this box will have no effect on the actual recording).</p>
-          <img src="./assets/img/streaming/saveRecording.jpg" alt="">
-          <p>Once you have verified the correct boxes are checked, click YES to end the session. If you hit the END button by accident or too early, simply click the NO button and the presentation will continue to run. Once the presentation has ended, go
-            in to FMLE, hit STOP and then hit DISCONNECT.</p>
-          <img src="./assets/img/streaming/endPresentation.jpg" alt="">
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <p>You will be prompted with a new window asking if you would like to end the stream. To save the recording, make sure you leave the “Save Recording” box checked. If you would like to place the presentation on demand right away check the box
+                labeled “Place presentation On Demand”.</p>
+              <img src="./assets/img/streaming/saveRecording.jpg" alt="">
+            </div>
+            <div class="small-12 medium-4 columns float-left">
+              <p>Once you have verified the correct boxes are checked, click YES to end the session. If you hit the END button by accident or too early, simply click the NO button and the presentation will continue to run. Once the presentation has ended,
+                go in to FMLE, hit STOP and then hit DISCONNECT.</p>
+              <img src="./assets/img/streaming/endPresentation.jpg" alt="">
+            </div>
+          </div>
           <li>
             <p>Why is my audio and video choppy?</p>
             <p>Please make sure you have a sufficient internet connection on site. We recommend that the encoding machine uses a 3MB hardwired dedicated line. Make sure that Wi-Fi is turned off on encoding machine. Speak with you IT provider before the live
@@ -279,31 +285,45 @@
           </li>
           <li>
             <p>I can see video and hear audio as an Admin but attendees say they cannot? How can I verify?</p>
-            <p>First, open up the source preview window in the top left corner of the console. Once opened click on the stream name in the left column under SOURCES. The live stream (with a slight delay) will appear in the far right window. Right click on
-              the stream in the right window and select open details.</p>
+
           </li>
-          <img src="./assets/img/streaming/openDetails.jpg" alt="">
-          <p>In the delivery methods drop down, select RTMP CDN. If you can see and hear the stream, the issue is isolated to that attendee. If you cannot hear or see the stream, there is an issue with the transcoding process.</p>
-          <img src="./assets/img/streaming/deliveryMethods.jpg" alt="">
-          <p>Remaining inside the Preview window, click on the stream “reload” button to the right of the name. This will reload the source in the console.</p>
-          <p>If the issues continues, stop the presentation by hitting the <b>END</b> button and saving the media. <b>Stop and disconnect</b> the stream from the platform from inside the encoder.</p>
           <div class="row">
             <div class="small-12 medium-4 columns">
-              <img src="./assets/img/streaming/end.jpg" alt="">
+              <p>First, open up the source preview window in the top left corner of the console. Once opened click on the stream name in the left column under SOURCES. The live stream (with a slight delay) will appear in the far right window. Right click
+                on the stream in the right window and select open details.</p>
+              <img src="./assets/img/streaming/openDetails.jpg" alt="">
             </div>
-            <div class="small-12 medium-8 columns">
-              <img src="./assets/img/streaming/endYes.jpg" alt="">
+            <div class="small-12 medium-4 columns float-left">
+              <p>In the delivery methods drop down, select RTMP CDN. If you can see and hear the stream, the issue is isolated to that attendee. If you cannot hear or see the stream, there is an issue with the transcoding process.</p>
+              <img src="./assets/img/streaming/deliveryMethods.jpg" alt="">
             </div>
           </div>
-          <p>Reload the presentation and reconnect the stream to the platform. Confirm the issue has been resolved using the Preview window.</p>
-          <img src="./assets/img/streaming/reload.jpg" alt="">
-          <p>If the issue still persists, please contact INXPO support or your Webcast Engineer.</p>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <p>Remaining inside the Preview window, click on the stream “reload” button to the right of the name. This will reload the source in the console.</p>
+              <img src="./assets/img/streaming/endYes.jpg" alt="">
+            </div>
+            <div class="small-12 medium-4 columns float-left">
+              <p>If the issues continues, stop the presentation by hitting the <b>END</b> button and saving the media. <b>Stop and disconnect</b> the stream from the platform from inside the encoder.</p>
+              <img src="./assets/img/streaming/end.jpg" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <p>Reload the presentation and reconnect the stream to the platform. Confirm the issue has been resolved using the Preview window.</p>
+              <img src="./assets/img/streaming/reload.jpg" alt="">
+              <p>If the issue still persists, please contact INXPO support or your Webcast Engineer.</p>
+            </div>
+          </div>
           <li>
             <p>Why is my audio and video out of sync?</p>
             <p>Make sure that your framerates match across all of your settings on the camera, the encoder, and the XPOCAST presentation. The standard encoding fps for streaming is 29.97. If the video is in sync in your encoding program but out of sync on
               the stream in XPOCAST, it could be an internet issue. Ensure you have the appropriate bandwidth available and that you are connected using a hardwired internet connection.</p>
           </li>
         </ol>
+        <div class="callout small primary">
+          <p>Note: Before the live day, make sure you have tested your equipment and workflow thoroughly, confirming you have successfully streamed to XPOCAST.</p>
+        </div>
       </article>
     </section>
   </div>

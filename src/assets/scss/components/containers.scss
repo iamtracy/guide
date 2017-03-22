@@ -1,4 +1,3 @@
-//Right Container
 .right-container {
   margin-left: $desktop-cont-margin;
   padding-top: 51px;
@@ -13,4 +12,21 @@
   max-width: 1575px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.streaming-section img {
+  margin-bottom: 1.75rem;
+}
+
+.streaming-section {
+  margin-bottom: .1rem;
+  ul {
+    margin-bottom: 1.85rem;
+    li {
+      margin-bottom: .5rem;
+    }
+  }
+  h4 {
+    margin-bottom: 1.25rem;
+  }
 }
