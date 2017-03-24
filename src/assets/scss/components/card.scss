@@ -1,8 +1,13 @@
 .card {
-  color: $dark-gray;
-  .card-section div {
-    margin: 7px;
-    text-align: center;
+  .card-section {
+    color: $dark-gray;
+    a {
+      color: $dark-gray;
+    }
+    div {
+      margin: 7px;
+      text-align: center;
+    }
   }
   i {
     color: map-get($foundation-palette, primary);
