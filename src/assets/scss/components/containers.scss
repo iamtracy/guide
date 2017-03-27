@@ -1,6 +1,14 @@
-.right-container {
-  margin-left: $desktop-cont-margin;
-  padding-top: 51px;
+@include breakpoint(medium) {
+  .right-container {
+    margin-left: $desktop-cont-margin;
+    padding-top: 51px;
+  }
+  footer {
+    margin-left: $desktop-cont-margin;
+  }
+  .float-right {
+    float: right !important;
+  }
 }
 
 .left-off-canvas-menu {
@@ -34,7 +42,6 @@
 .panels {
   ul {
     margin-left: 1.25rem;
-    margin-bottom: 1.4rem;
     li {
       list-style: none;
     }
