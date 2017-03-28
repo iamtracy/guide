@@ -20,3 +20,8 @@ section {
 .underline {
   text-decoration: underline;
 }
+
+.thumbnail img {
+  max-width: 52px;
+  max-height: 52px;
+}
