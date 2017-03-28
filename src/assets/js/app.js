@@ -13,6 +13,18 @@ $(function() {
   });
 });
 
+$('.to-top').click(function() {
+  $('html,body').animate({
+    scrollTop: $('#test').css('top')
+  }, 800, function() {
+
+    $('html, body').animate({
+      scrollTop: 0
+    }, 800);
+
+  });
+});
+
 $('[data-toggle="dropdown"]').click(function() {
   $('[data-toggle="dropdown-tabs-content"]').toggleClass('hide');
 })

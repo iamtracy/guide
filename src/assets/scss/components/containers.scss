@@ -50,3 +50,19 @@
     margin-bottom: 1rem;
   }
 }
+
+.to-top {
+  position: fixed;
+  right: 13px;
+  bottom: 12px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.4rem 0.9rem;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0, 0, 0, 0.45);
+    color: #f3f3f3;
+  }
+}
