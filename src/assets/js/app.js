@@ -13,6 +13,17 @@ $(function() {
   });
 });
 
+
+$(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 725) {
+    $('.to-top').fadeIn();
+  } else {
+    $('.to-top').fadeOut();
+  }
+});
+
+
 $('.to-top').click(function() {
   $('html,body').animate({
     scrollTop: $('#test').css('top')
